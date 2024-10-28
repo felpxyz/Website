@@ -1,7 +1,53 @@
 /* Reset CSS */
-*{
+* {
     margin: 0 ;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+h1 {
+    transition: 0.2s ease-in-out;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 1.8em;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    font-size: 1.3em;
+    margin-right: 1.4em;
+    padding: 14px;
 }
