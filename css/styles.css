@@ -1,16 +1,16 @@
-/* Reset CSS */
+/*RESET CSS*/
 * {
-    margin: 0 ;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     width: 100%;
     height: 100vh;
     background-color: #333;
-    color: #fff;
+    color: #FFF;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -18,7 +18,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: #FFF;
     transition: 0.2s ease-in-out;
 }
 
@@ -26,18 +26,18 @@ h1 {
     transition: 0.2s ease-in-out;
 }
 
-/* Header */
+/*HEADER*/
 header {
     background-color: #222;
-    padding: 20px;
+    padding: 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 header h1 {
-    font-size: 1.8em;
-    font-weight: 400;
+    font-size: 2.8em;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -47,7 +47,74 @@ header nav {
 }
 
 header nav a {
-    font-size: 1.3em;
+    font-size: 2em;
     margin-right: 1.4em;
     padding: 14px;
+}
+
+header nav a:nth-child(4) {
+    margin-right: 0em;
+}
+
+header h1:hover,
+a:hover {
+    color: #00E0FF;
+}
+
+/*Main content*/
+main {
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+main .main-content h2 {
+    margin-bottom: 2%;
+    font-size: 2.2em;
+}
+
+main .main-content .text {
+    margin-bottom: 10%;
+}
+
+main .main-content .text p {
+    width: 75%;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.6em;
+    padding: 0 5%;
+}
+
+/*Cards*/
+main .techs .cards-container {
+    display: flex;
+    align-items: center;
+}
+
+main .techs .cards-container .card {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    background-color: #FFF;
+    border-radius: 8px;
+    margin-right: 1.8em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+}
+
+main .techs .cards-container .card:nth-child(4) {
+    margin-right: 0em;
+}
+
+main .main-content .techs .cards-container .card img {
+    width: 60%;
 }
